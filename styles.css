@@ -39,7 +39,7 @@ em { color:var(--accent); font-style:normal; }
 .option:hover, .option:focus-visible { background:#a68b68; border-color:#755d43; outline:none; }
 .option-letter { color:var(--accent); font-family:'DM Mono', monospace; font-size:12px; padding-top:3px; }
 .first-thought { color:var(--muted); margin-top:34px; text-transform:none; letter-spacing:0; }
-.result-screen { padding:0; background:#b49a78; }
+.result-screen { padding:0; background:#b49a78; border:6px solid var(--book-accent); }
 .result-art { height:260px; background:linear-gradient(135deg,#48545a,#b86645 55%,#e2b98d); position:relative; overflow:hidden; }
 .result-art:before, .result-art:after { content:""; position:absolute; border:1px solid #fff8; transform:rotate(28deg); }
 .result-art:before { width:310px; height:310px; top:-168px; right:-20px; border-radius:50%; }
@@ -56,4 +56,20 @@ blockquote { margin:0 0 30px; padding-left:18px; border-left:2px solid var(--boo
 .book-note > span { color:var(--book-accent); font-family:'DM Mono', monospace; font-size:11px; letter-spacing:.08em; }
 .disclaimer { color:#51463b; font-size:11px; font-weight:500; line-height:1.8; margin-top:38px; }
 .result-actions { margin-top:28px; padding-top:20px; border-top:1px solid var(--line); color:var(--book-accent); font-family:'DM Mono', monospace; font-size:11px; }
-@media (max-width:520px) { .site-shell { padding:0; } .screen { min-height:100vh; box-shadow:none; } .intro-screen { padding-top:56px; } .progress-track { margin-bottom:48px; } .result-art { height:210px; } }
+@media (max-width:520px) {
+  .site-shell { padding:0; }
+  .screen { min-height:100vh; box-shadow:none; }
+  .intro-screen { padding-top:56px; }
+  .progress-track { margin-bottom:48px; }
+  .result-screen { min-height:100vh; border-width:5px; }
+  .result-art { height:72px; }
+  .result-content { padding:12px 14px 14px; }
+  .result-content .eyebrow { margin-bottom:8px; font-size:8px; }
+  .result-content h1 { font-size:21px; line-height:1.2; margin-bottom:2px; }
+  .author { font-size:9px; margin-bottom:8px; }
+  blockquote { margin-bottom:10px; padding-left:8px; font-size:12.5px; line-height:1.4; }
+  .result-text { font-size:10px; line-height:1.45; }
+  .book-note { display:none; }
+  .disclaimer { font-size:8px; line-height:1.4; margin-top:9px; }
+  .result-actions { margin-top:8px; padding-top:7px; font-size:8px; }
+}
