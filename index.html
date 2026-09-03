@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="通过二十道情景选择题，看看你的人生更像哪一本小说。" />
+    <title>人生小说测试</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <section id="intro-screen" class="screen intro-screen">
+        <div class="eyebrow">LIFE AS A NOVEL / 01</div>
+        <h1>如果你的人生<br /><em>是一部小说</em></h1>
+        <p class="intro-copy">用二十个日常选择，走进一本与你暗中相似的书。</p>
+        <div class="intro-rule"></div>
+        <p class="notice">这不是对你人生的客观判断，而是一场文学性的投射。没有正确答案，请凭第一反应选择。</p>
+        <button id="start-button" class="primary-button">开始测试 <span>→</span></button>
+        <p class="payment-note">已在小红书购买？点击开始测试</p>
+      </section>
+
+      <section id="quiz-screen" class="screen quiz-screen hidden">
+        <header class="quiz-header">
+          <button id="back-button" class="text-button" type="button">← 返回</button>
+          <span id="progress-label">01 / 20</span>
+        </header>
+        <div class="progress-track"><div id="progress-bar"></div></div>
+        <div class="question-index" id="question-index">QUESTION 01</div>
+        <h2 id="question-text"></h2>
+        <div id="options" class="options" role="radiogroup"></div>
+        <p class="first-thought">尽量凭第一反应选择</p>
+      </section>
+
+      <section id="result-screen" class="screen result-screen hidden">
+        <div id="result-art" class="result-art" aria-hidden="true"><span></span></div>
+        <div class="result-content">
+          <div class="eyebrow">YOUR RESULT / 20</div>
+          <h1>如果你是一本小说，<br />你更像<strong id="result-title"></strong></h1>
+          <p id="result-author" class="author"></p>
+          <blockquote id="result-quote"></blockquote>
+          <p id="result-text" class="result-text"></p>
+          <div class="book-note">
+            <span>关于这本书</span>
+            <p id="result-synopsis"></p>
+          </div>
+          <p class="disclaimer">这是一场文学性的自我投射，不构成心理、人格或人生诊断。</p>
+          <div class="result-actions"><span>请截屏保存这份结果</span></div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
